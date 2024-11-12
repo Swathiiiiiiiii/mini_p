@@ -1,0 +1,81 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: url(whitee.jpg);
+    background-size: cover;
+    background-position: center;
+    font-family: sans-serif;
+}
+
+.registerbox {
+    width: 320px;
+    height: 480px;
+    background: #ffe6e6;
+    color: #000000;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+}
+
+.avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: -50px;
+    left: calc(50% - 50px);
+}
+
+h1 {
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 22px;
+}
+
+.registerbox p {
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+
+.registerbox input {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.registerbox input[type="text"], input[type="email"], input[type="password"] {
+    border: none;
+    border-bottom: 1px solid #000000;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #333;
+    font-size: 16px;
+}
+
+.registerbox input[type="submit"] {
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #98FF98;
+    color: #030303;
+    font-size: 18px;
+    border-radius: 20px;
+}
+
+.registerbox input[type="submit"]:hover {
+    cursor: pointer;
+    background: #ffc107;
+    color: #000;
+}
+
+.registerbox a {
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 20px;
+    color: rgb(2, 2, 2);
+}

@@ -1,0 +1,591 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color:#fdf6f6;
+    color: #333;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+}
+
+.sidebar {
+
+        width: 150px;
+        height: 100vh;
+        background-color:lightsalmon;
+        position: fixed;
+        top: 0;
+        left: 0;
+        padding: 20px;
+      
+     
+}
+
+.logo img {
+    width: 100px;
+    margin-bottom: 20px;
+}
+
+.hamburger {
+    display: none; /* Initially hidden */
+    font-size: 30px;
+    cursor: pointer;
+    margin: 10px 0; /* Optional spacing */
+    position: absolute; /* Position absolute to not affect layout */
+    top: 10px; /* Adjust the top position as needed */
+    right: 10px; /* Align to the right */
+    z-index: 10; /* Ensure it's above other elements */
+}
+
+.sidebar nav ul {
+    list-style: none;
+
+}
+
+.sidebar nav ul li {
+    margin: 20px 0;
+}
+
+.sidebar nav ul li a {
+    text-decoration: none;
+    color:black;
+    font-size: 18px;
+    display: block;
+    padding: 10px 0;
+    transition: color 0.3s;
+}
+
+.sidebar nav ul li a:hover {
+    color:orangered;
+}
+
+.menu {
+    display: block; /* Default to block for desktop */
+}
+
+.menu.active {
+    display: block; /* Show menu when active */
+}
+
+/* Main content styles */
+.main-content {
+    width: 100%;
+    padding: 50px;
+    background-color: #fdf6f6;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.banner {
+    max-width:80%;
+    margin-left:150px;
+
+}
+
+.banner h1 {
+    font-size: 36px;
+    color: #333;
+  
+}
+
+.banner h2 {
+    font-size: 28px;
+    color: #ff4747;
+ 
+}
+
+.banner p {
+    font-size: 16px;
+
+    color: #555;
+}
+
+
+.book-btn {
+    background-color:red;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 25px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 10px;
+    margin-top: 20px;
+  }
+  
+  .btn:hover {
+    background-color: #3e8e41;
+  }
+
+  .login-btn{
+    position: absolute; /* Position the button absolutely */
+    top:20px;
+    right: 10px; 
+
+    background-color:blue;
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size:15px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 50% 50%;
+ 
+  }
+  .login-btn:hover{
+    background-color: #3e8e41;
+  }
+.ambulance-img video{
+    margin-left:100px;
+        height:700px;
+        width:600px
+    
+}
+
+.contact-section {
+    padding: 50px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.contact-section h1 {
+    font-size: 36px;
+    color: #333;
+   
+}
+
+.contact-section p {
+    font-size: 16px;
+    color: #555;
+}
+
+.services-list {
+    list-style-type: none;
+    padding: 0;          
+}
+
+.services-list li {
+    margin: 10px 0;   
+ 
+
+}
+
+.floating-button {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    right: 20px; /* Aligns the buttons to the right */
+    border-radius: 50%;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 2px 2px 3px #999;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.whatsapp-button {
+    top: 55%; /* Position the WhatsApp button at 30% from the top */
+    background-color: #25d366;
+    color: #FFF;
+}
+
+.phone-button {
+    top: 40%; /* Position the phone button at 50% from the top */
+    background-color: #007bff;
+    color: #FFF;
+}
+
+.floating-button:hover {
+    transform: scale(1.1);
+}
+
+.mission-section {
+    display: flex; /* Center the section horizontally */
+    justify-content: center; 
+    margin-bottom: 50px;
+    margin-left: 50px;
+}
+
+.mission-container {
+    background-color: #e6f7ff; /* Light blue background for the highlighted effect */
+    border: 2px solid #007bff; /* Blue border to emphasize the box */
+    border-radius: 8px; /* Rounded corners */
+    padding: 30px; /* Increased padding inside the box */
+    width: 95%; /* Full width with some margin on the sides */
+    max-width: 1200px; /* Maximum width for larger screens */
+    text-align: left; /* Align text to the left */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.mission-container h3 {
+    font-size: 24px; /* Font size for the heading */
+    font-weight: 700; /* Bold text */
+    color: #007bff; /* Blue color for the heading */
+    margin-bottom: 15px; /* Space below the heading */
+}
+
+.mission-container h4 {
+    font-size: 20px; 
+    font-weight: 600; /* Semi-bold text */
+    color: #0056b3; /* Darker blue for subheadings */
+    margin-top: 15px; /* Space above subheadings */
+}
+
+.mission-container p {
+    font-size: 16px; /* Font size for the paragraph */
+    color: #333; /* Darker text color */
+    line-height: 1.5; /* Line height for readability */
+}
+
+.goal-list {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* Remove default padding */
+}
+
+.goal-list li {
+    font-size: 16px; /* Font size for goal items */
+    color: #333; /* Darker text color */
+    margin: 10px 0; /* Space between goal items */
+}
+
+.goal-list li i {
+    color: #007bff; /* Blue color for icons */
+    margin-right: 10px; /* Space between icon and text */
+}
+
+
+
+svg {
+	height: 23rem;
+	margin-right: 4rem;
+}
+
+#envelope {
+  animation: float 2s ease-in-out infinite;
+}
+
+#star1, #star2, #star3, #star4, #star5, #star6 {
+  animation: blink 1s ease-in-out infinite;
+}
+#star2 { animation-delay: 100ms; }
+#star3 { animation-delay: 500ms; }
+#star4 { animation-delay: 700ms; }
+#star5 { animation-delay: 300ms; }
+#star6 { animation-delay: 200ms }
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: .5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.container {
+	height: 100vh;
+}
+
+form {
+	min-width: 25rem;
+	
+	.title {
+		font-family: 'Pacifico', cursive;
+		color: #212529;
+		font-size: 2.5rem;
+	}
+	
+  .form-control {
+    background-color: #f2f6f8;
+		border-radius: 2rem;
+    border: none;
+    box-shadow: 0px 7px 5px rgba(0, 0, 0, 0.11);
+		
+    &.thick {
+      height: 3.3rem;
+      padding: .5rem 3.5rem;
+    }
+		
+		&:focus {
+			background-color: #f2f6f8;
+			border: none;
+			box-shadow: 0px 7px 5px rgba(0, 0, 0, 0.11);
+		}
+  }
+	
+	.message .form-control {
+			padding: .5rem 1.8rem;
+	}
+	
+  ::placeholder {
+    font-family: 'Quicksand', sans-serif;
+		font-weight: 600;
+    font-size: 1.1rem;
+    color: #838788;
+    position: relative;
+    left: 0;
+  }
+	
+  input,
+  textarea {
+		font-family: 'Quicksand', sans-serif;
+    color: #212529;
+    font-size: 1.1rem;
+  }
+	
+  .icon {
+    color: #57565c;
+    height: 1.3rem;
+    position: absolute;
+    left: 1.5rem;
+    top: 1.1rem;
+  }
+}
+
+.btn.btn-primary {
+  font-family: 'Quicksand', sans-serif;
+	font-weight: bold;
+  height: 2.5rem;
+  line-height: 2.5rem;
+  padding: 0 3rem;
+  border: 0;
+  border-radius: 3rem;
+  background-image:linear-gradient(131deg, #ffd340, #ff923c, #ff923c, #ff923c);
+  background-size: 300% 100%;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn.btn-primary:hover:enabled {
+  box-shadow: 0 0.5em 0.5em -0.4em #ff923cba;
+  background-size: 100% 100%;
+  transform: translateY(-0.15em);
+}
+
+footer {
+    background-color: #fff3e0; /* Light orange background */
+    color: #333; /* Dark text color for contrast */
+    padding: 40px 20px;
+    font-family: Arial, sans-serif; /* Use a clean font */
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    width: 80%; /* Limit to half the width of the screen */
+    margin: 0 auto; /* Center the footer */
+}
+
+.main-menu, .text-column, .newsletter {
+    width: 30%;
+    margin: 0 30px; /* Increased margin for left and right */
+}
+
+.main-menu {
+    margin-right: 60px; /* Extra space to the right for more separation */
+}
+
+.text-column {
+    margin: 0 60px; /* Increased margin on both sides for more space */
+}
+
+.newsletter {
+    margin-left: 60px; /* Extra space to the left for more separation */
+}
+
+h4 {
+    padding-bottom: 10px;
+    font-size: 1.5em; /* Increased font size */
+    color: #d45d00; /* Darker orange for headings */
+}
+
+p {
+    font-size: 0.95em; /* Slightly larger paragraph text */
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin: 15px 0; /* More space between items */
+}
+
+ul li a {
+    color: #ff5722; /* Bright orange link color */
+    text-decoration: none;
+    font-size: 1em; /* Adjust link size */
+}
+
+ul li a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons a {
+    margin-right: 15px; /* More space between icons */
+    color: #333; /* Dark color for icons */
+    text-decoration: none;
+    font-size: 1.5em; /* Adjust icon size */
+}
+
+.newsletter input {
+    width: 80%;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 5px; /* Rounded corners */
+}
+
+.newsletter button {
+    padding: 10px 15px;
+    background-color: #ff5722; /* Bright orange button color */
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px; /* Rounded corners for button */
+}
+
+.newsletter button:hover {
+    background-color: #e64a19; /* Darker orange on hover */
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 0.8em;
+}
+
+.powered-by {
+    margin-top: 10px;
+}
+
+
+@media (max-width: 768px) {
+    .floating-button {
+        width: 50px;
+        height: 50px;
+        font-size: 24px;
+    }
+
+    .whatsapp-button {
+        top: 25%; /* Adjust position for smaller screens */
+    }
+
+    .phone-button {
+        top: 45%; /* Adjust position for smaller screens */
+    }
+}
+
+
+
+
+
+@media (max-width: 767px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .hamburger {
+        display: block; /* Show hamburger icon in mobile view */
+    }
+
+    .menu {
+        display: none; /* Hide menu in mobile view by default */
+        background-color: #ffe6e6; /* Match sidebar background */
+        position: absolute; /* Position it absolutely */
+        top: 60px; /* Adjust according to your layout */
+        left: 0;
+        right: 0;
+        z-index: 100; /* Ensure it appears on top */
+        padding: 10px 0; /* Optional padding */
+    }
+
+    .menu.active {
+        display: block; /* Show menu when active */
+    }
+
+    .menu ul {
+        flex-direction: column; /* Stack the menu items vertically */
+    }
+
+    .menu ul li {
+        margin: 15px 0; /* More space between items */
+    }
+
+    .main-content {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .banner h1 {
+        font-size: 24px;
+    }
+
+    .banner h2 {
+        font-size: 20px;
+    }
+
+    .book-btn {
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+
+    .ambulance-img img {
+        width: 80%;
+        height: auto;
+    }
+
+    .contact-section {
+        padding: 20px;
+    }
+
+    footer {
+        font-size: 14px;
+    }
+}
